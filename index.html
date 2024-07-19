@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Login&Register_Page</title>
+
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js" defer></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="nav">
+                <div class="nav-logo">
+                    <h5>VoyageLv.</h5>
+                </div>
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="#" class="link">HOME</a></li>
+                        <li><a href="#" class="link">BLOG</a></li>
+                        <li><a href="#" class="link">SERVICES</a></li>
+                        <li><a href="#" class="link">ABOUT</a></li>
+                        <li><button class="loginBtn" onclick="document.getElementById('page').style.display='block'"
+                            style="width:auto;">Login</button></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="page" class="loginPage">
+                <div class="form-box">
+                    <div class="btn-box">
+                        <div id="btn"></div>
+                        <button type="button" onclick="login()" class="toggle">Log In</button>
+                        <button type="button" onclick="register()" class="toggle">Register</button>
+                    </div>
+                    <form id=login class="input-box-login">
+                        <input type="text" class="input-field" placeholder="Email Id" required >
+                        <input type="password" class="input-field" placeholder="Password" required >
+                        <input type="checkbox" class="check-box"><span>Remember Password</span>
+                        <button type="submit" class="submitBtn">Log In</button>
+                        <p>Don't have an account? <a href="#" class="p_link">Register</a></p>
+                    </form>
+                    <form id=register class="input-box-register">
+                        <input type="text" class="input-field" placeholder="Full Name" required >
+                        <input type="text" class="input-field" placeholder="Usename" required >
+                        <input type="text" class="input-field" placeholder="Email" required >
+                        <input type="password" class="input-field" placeholder="Password" required >
+                        <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+                        <button type="submit" class="submitBtn">Register</button>
+                        <p>Have an account? <a href="#" class="p_link">Login</a></p>
+                    </form>
+                </div>
+            </div>    
+        </div>
+    </body>
+</html>
